@@ -14,7 +14,7 @@ export default class App extends Component {
   render () {
     return (
       <div style={{background: "#ff0"}}>
-        <AnchorButton size={4}/>
+        <AnchorButton />
         <BlowfishButton/>
         <CompassButton/>
         <BorderButton/>

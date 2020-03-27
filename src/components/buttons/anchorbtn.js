@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import Icon from '../anchor';
-//import {styles} from '../../styles';
 import '../../styles.css';
 
 
@@ -10,16 +9,21 @@ function AnchorButton(props) {
   const [btnStyle, setBtnStyle] = useState(props.btnStyle)
 
   useEffect(() => {
+        let buttonWidth = "100px"
 
-        const buttonWidth = (props.size*9 + parseInt(stateButtonWidth.replace(/px/,""))).toString() + "px"
-        const buttonFontSize = (props.size + parseInt(stateFontSize.replace(/px/,""))).toString() + "px"
-        console.log(buttonWidth);
+        let buttonFontSize = "13px"
+        if(props.size){
+          buttonWidth = (props.size*9 + parseInt(stateButtonWidth.replace(/px/,""))).toString() + "px"
+          buttonFontSize = (props.size + parseInt(stateFontSize.replace(/px/,""))).toString() + "px"
+        }
+
         setBtnStyle({
                         fontFamily: (props.fontFamily || "Diplomata SC"),
                         background: (props.backgroundColor || "#fff"),
                         border: (props.border || "none"),
                         width: buttonWidth,
-                        fontSize: buttonFontSize
+                        fontSize: buttonFontSize,
+                        color: (props.fontColor || "#000000")
                     }
                   );
 
