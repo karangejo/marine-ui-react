@@ -1,22 +1,29 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+//import React, { Component } from 'react'
+export AnchorButton from './components/buttons/anchorbtn';
+export BlowfishButton from './components/buttons/blowfishbtn';
+export CompassButton from './components/buttons/compassbtn';
+export BorderButton from './components/buttons/borderbtn';
+export CrabButton from './components/buttons/crabbtn';
+export DolphinButton from './components/buttons/dolphinbtn';
+export FishButton from './components/buttons/fishbtn';
 
-import styles from './styles.css'
+
+/*
+
+import './styles.css';
 
 export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
+
 
   render() {
-    const {
-      text
-    } = this.props
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
+      <div>
+
+        <AnchorButton />
+
       </div>
     )
   }
 }
+*/

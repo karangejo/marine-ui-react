@@ -1,0 +1,9 @@
+/* add css styles here (optional) */
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Cinzel+Decorative|Diplomata+SC|Fredericka+the+Great&display=swap');
+
+button {
+    font-family: "Diplomata SC";
+    background:"#fff";
+    border: "none";
+    width:"100px";
+}
