@@ -5,16 +5,21 @@ import '../../styles.css';
 
 
 function AnchorButton(props) {
-
+  const [stateFontSize, setStateFontSize] = useState(props.fontSize || "13px");
+  const [stateButtonWidth, setStateButtonWidth] = useState(props.width || "100px")
   const [btnStyle, setBtnStyle] = useState(props.btnStyle)
 
   useEffect(() => {
+
+        const buttonWidth = (props.size*9 + parseInt(stateButtonWidth.replace(/px/,""))).toString() + "px"
+        const buttonFontSize = (props.size + parseInt(stateFontSize.replace(/px/,""))).toString() + "px"
+        console.log(buttonWidth);
         setBtnStyle({
                         fontFamily: (props.fontFamily || "Diplomata SC"),
                         background: (props.backgroundColor || "#fff"),
                         border: (props.border || "none"),
-                        width:(props.width || "100px"),
-                        fontSize: (props.fontSize || "13px")
+                        width: buttonWidth,
+                        fontSize: buttonFontSize
                     }
                   );
 
