@@ -1,6 +1,6 @@
 # marine-ui-react
 
-> buttons and icon components for react with a marine theme
+> marine themed ui elements for react
 
 [![NPM](https://img.shields.io/npm/v/marine-ui-react.svg)](https://www.npmjs.com/package/marine-ui-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 

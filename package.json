@@ -1,7 +1,7 @@
 {
   "name": "marine-ui-react",
   "version": "1.0.0",
-  "description": "buttons and icon components for react with a marine theme",
+  "description": "marine themed ui elements for react",
   "author": "karangejo",
   "license": "MIT",
   "repository": "karangejo/marine-ui-react",
