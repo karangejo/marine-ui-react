@@ -6,7 +6,7 @@ function Border(props) {
       xmlns="http://www.w3.org/2000/svg"
       x="0"
       y="0"
-      width={props.width || "100%"}
+      width={props.width || "80%"}
       height={props.height || "100%"}
       version="1.1"
       viewBox="0 0 1658.913 1658.913"

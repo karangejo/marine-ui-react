@@ -7,13 +7,15 @@ import {
           BorderButton,
           CrabButton,
           DolphinButton,
-          FishButton
+          FishButton,
+          LobsterButton,
+          OctopusButton
         } from 'marine-ui-react'
 
 export default class App extends Component {
   render () {
     return (
-      <div style={{background: "#ff0"}}>
+      <div>
         <AnchorButton />
         <BlowfishButton/>
         <CompassButton/>
@@ -21,6 +23,8 @@ export default class App extends Component {
         <CrabButton/>
         <DolphinButton/>
         <FishButton/>
+        <LobsterButton/>
+        <OctopusButton/>
       </div>
     )
   }

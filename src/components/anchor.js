@@ -3,7 +3,7 @@ import React from "react";
 function Anchor(props) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg"
-          width={props.width || "100%"}
+          width={props.width || "65%"}
           height={props.height || "100%"}
           viewBox="0 0 272.043 357"
           style={{backgroundColor: ( props.backgroundColor|| "#fff")}}

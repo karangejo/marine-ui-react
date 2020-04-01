@@ -3,7 +3,7 @@ import React from "react";
 function Compass(props) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg"
-        width={props.width || "100%"}
+        width={props.width || "80%"}
         height={props.height || "100%"}
         viewBox="0 0 426.211 426.211"
         style={props.style || null}>

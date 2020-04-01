@@ -4,7 +4,7 @@ function Crab(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={props.width || "100%"}
+      width={props.width || "85%"}
       height={props.height || "100%"}
       viewBox="0 0 1112.813 933.75"
       style={props.style || null}
