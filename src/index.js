@@ -9,3 +9,7 @@ export FishButton from './components/buttons/fishHocBtn';
 export AnchorButton from './components/buttons/anchorHocBtn';
 export LobsterButton from './components/buttons/lobsterHocBtn';
 export OctopusButton from './components/buttons/octopusHocBtn';
+export SeahorseButton from './components/buttons/seahorseHocBtn';
+export SharkButton from './components/buttons/sharkHocBtn';
+export ShellButton from './components/buttons/shellHocBtn';
+export ResponsiveImage from './components/responsiveImage/responsiveImage';

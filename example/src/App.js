@@ -9,7 +9,10 @@ import {
           DolphinButton,
           FishButton,
           LobsterButton,
-          OctopusButton
+          OctopusButton,
+          SeahorseButton,
+          SharkButton,
+          ShellButton
         } from 'marine-ui-react'
 
 export default class App extends Component {
@@ -25,6 +28,9 @@ export default class App extends Component {
         <FishButton/>
         <LobsterButton/>
         <OctopusButton/>
+        <SeahorseButton/>
+        <SharkButton/>
+        <ShellButton/>
       </div>
     )
   }

@@ -3,7 +3,7 @@ import React from "react";
 function Shark(props) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg"
-          width={props.width || "100%"}
+          width={props.width || "120%"}
           height={props.height || "100%"}
           viewBox="0 0 684.378 277.476"
           style={props.style || null}>
