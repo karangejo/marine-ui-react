@@ -15,12 +15,97 @@ npm install --save marine-ui-react
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'marine-ui-react'
+import {
+          AnchorButton,
+          BlowfishButton,
+          CompassButton,
+          BorderButton,
+          CrabButton,
+          DolphinButton,
+          FishButton,
+          LobsterButton,
+          OctopusButton,
+          SeahorseButton,
+          SharkButton,
+          ShellButton
+        } from 'marine-ui-react'
 
-class Example extends Component {
+export default class App extends Component {
   render () {
     return (
-      <MyComponent />
+      <div>
+        <AnchorButton />
+        <BlowfishButton/>
+        <CompassButton/>
+        <BorderButton/>
+        <CrabButton/>
+        <DolphinButton/>
+        <FishButton/>
+        <LobsterButton/>
+        <OctopusButton/>
+        <SeahorseButton/>
+        <SharkButton/>
+        <ShellButton/>
+      </div>
+    )
+  }
+}
+```
+
+Some props you can pass to the buttons are:
+
+```jsx
+size={1}
+btnStyle={{your: "custom style"}}
+width="20px"
+backgroundColor="#ff0"
+fontColor="#ff0"
+fontFamily
+fontSize
+onClick
+onMouseEnter
+onMouseLeave
+btnClassname
+iconClassname
+iconWidth
+iconHeight
+iconStyle
+border
+type
+```
+
+You also have access to an HOC wich you can pass your own svg to create a button.
+The created button accepts all of the above props.
+
+```jsx
+import YourSVG  from './../mySvgReactComponent';
+import ButtonHoc from 'marine-ui-react';
+export default ButtonHoc(YourSVG);
+```
+
+just make sure the svg accepts conditional props like below:
+
+```jsx
+// within your svg component
+width={props.width || "65%"}
+height={props.height || "100%"}
+style={{backgroundColor: ( props.backgroundColor|| "#fff")}}
+className={props.iconClassName || "anchorIcon"}
+```
+There is also a responsive image component:
+
+```jsx
+import myImage from 'myImage.png';
+import React, { Component } from 'react'
+
+import {ResponsiveImage} from 'marine-ui-react'
+
+export default class App extends Component {
+  render () {
+    return (
+      <div>
+        <ResponsiveImage src={myImage} width={myImageWidth} height={myImageHeight}/>
+      </div>
     )
   }
 }
