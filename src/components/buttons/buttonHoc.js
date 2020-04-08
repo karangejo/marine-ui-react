@@ -25,7 +25,7 @@ const ButtonHoc = (Icon) => (props) => {
                       }
                     );
   
-    },[]);
+    },[props.size, props.fontFamily, props.backgroundColor, props.border, props.fontColor]);
   
     return (
         <button
