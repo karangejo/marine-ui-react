@@ -2,14 +2,14 @@ import React, {useState, useEffect} from 'react';
 
 const ButtonHoc = (Icon) => (props) => {
 
-    const [stateFontSize, setStateFontSize] = useState(props.fontSize || "13px");
-    const [stateButtonWidth, setStateButtonWidth] = useState(props.width || "100px")
+    const [stateFontSize, setStateFontSize] = useState(props.fontSize || "7px");
+    const [stateButtonWidth, setStateButtonWidth] = useState(props.width || "50px")
     const [btnStyle, setBtnStyle] = useState(props.btnStyle)
   
     useEffect(() => {
-          let buttonWidth = "100px"
+          let buttonWidth = "50px"
   
-          let buttonFontSize = "13px"
+          let buttonFontSize = "7px"
           if(props.size){
             buttonWidth = (props.size*9 + parseInt(stateButtonWidth.replace(/px/,""))).toString() + "px"
             buttonFontSize = (props.size + parseInt(stateFontSize.replace(/px/,""))).toString() + "px"
